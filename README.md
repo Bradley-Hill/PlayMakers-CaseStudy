@@ -42,3 +42,10 @@ So my first thoughts are to start thusly :
 - the inequality version (x-a)^2 + (y-b)^2 <= r^2 is useful for checking the pixels within the circle. A useful tool that may be used later.
 - learned the math for converting 2D array coordinates into 1d array and that it is necessary for image data which while often represented as having height and width, the raw image data is still stored in a 1D array.
 - index = 4 _ (width _ y + x)
+
+## Third Steps
+
+- ColorThief documentation reading and how I'm going to define happy colours, (Red,Yellow,Pink,Orange will be my happy colours)
+- had to create a declaration.d.ts file to spoof the colorthief library into working with TypeScript, a shame, but its a quick and ugly fix that seems to work.
+- uninstalled colorthief, as it relies on canvas, and installed color-thief-node, which works better in a node environment.
+- more maths, of a simpler sort just defining acceptable difference in values between what i have defined as my happy colours and the dominantColour returned by color-thief-node

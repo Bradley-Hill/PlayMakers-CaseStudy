@@ -21,3 +21,12 @@ So my first thoughts are to start thusly :
 - Researching useful libraries for color analysis
 - Breakdown functions into basic elements
 - Test Driven Development
+
+## First steps
+
+- [ColorThief](https://lokeshdhakar.com/projects/color-thief/#examples) seems pretty popular and more importantly, not too complicated
+- [Sharp](https://sharp.pixelplumbing.com/) Ditto for Sharp, a robust image manipulation library, lets give it a go.
+- Setup Node project in badge-checker, and installed TypeScript and Jest, standard config for TypeScript and created jest.config to play nice with TypeScript.
+- Installed sharp and colorthief
+- First test written.
+- added `"types": ["node", "jest"]` to tsconfig.json

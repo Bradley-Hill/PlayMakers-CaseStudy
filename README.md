@@ -30,3 +30,4 @@ So my first thoughts are to start thusly :
 - Installed sharp and colorthief
 - First test written.
 - added `"types": ["node", "jest"]` to tsconfig.json
+- First test passed, now down to business.

@@ -38,4 +38,7 @@ So my first thoughts are to start thusly :
 - added images to images folder to be used in testing, on .png and one .jpg
 - tests for checkSize and isPng added in.
 - test for onlyTransparentOutsideCircle tests started
-- detour revising mathematics of circles. (x-h)^2 + (y-k)^2 = r^2 where x and y are any given coordinates and h,k are the centre of the circle. This can be used for checking when pixels are outside of the circle.
+- detour revising mathematics of circles. (x-a)^2 + (y-b)^2 = r^2 where x and y are any given coordinates and a,b are the centre of the circle. This can be used for checking when pixels are outside of the circle.
+- the inequality version (x-a)^2 + (y-b)^2 <= r^2 is useful for checking the pixels within the circle. A useful tool that may be used later.
+- learned the math for converting 2D array coordinates into 1d array and that it is necessary for image data which while often represented as having height and width, the raw image data is still stored in a 1D array.
+- index = 4 _ (width _ y + x)

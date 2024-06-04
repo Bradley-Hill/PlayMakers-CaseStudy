@@ -74,7 +74,7 @@ describe("checkSize", () => {
 describe("onlyTransparentOutsideCircle", () => {
   it("should return true for images with only transparent pixels outside of the circle", async () => {
     const image = fs.readFileSync(
-      path.join(__dirname, "..", "images", "test.png")
+      path.join(__dirname, "..", "images", "512test.png")
     );
     const result = await onlyTransparentOutsideCircle(image);
     expect(result).toBe(true);

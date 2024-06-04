@@ -1,5 +1,10 @@
 import { describe } from "node:test";
-import { badgeChecker, isPng, checkSize } from "../src/badgeChecker";
+import {
+  badgeChecker,
+  isPng,
+  checkSize,
+  onlyTransparentOutsideCircle,
+} from "../src/badgeChecker";
 import fs from "fs";
 import path from "path";
 
@@ -63,5 +68,15 @@ describe("checkSize", () => {
     );
     const result = await checkSize(incorrectSizeImage);
     expect(result).toBe(false);
+  });
+});
+
+describe("onlyTransparentOutsideCircle", () => {
+  it("should return true for images with only transparent pixels outside of the circle", async () => {
+    const image = fs.readFileSync(
+      path.join(__dirname, "..", "images", "test.png")
+    );
+    const result = await onlyTransparentOutsideCircle(image);
+    expect(result).toBe(true);
   });
 });

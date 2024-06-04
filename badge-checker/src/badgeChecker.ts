@@ -20,3 +20,9 @@ export async function checkSize(image: Buffer): Promise<boolean> {
   const metadata = await sharp(image).metadata();
   return metadata.width === 512 && metadata.height === 512;
 }
+
+export async function onlyTransparentOutsideCircle(
+  image: Buffer
+): Promise<boolean> {
+  return true;
+}

@@ -49,3 +49,12 @@ So my first thoughts are to start thusly :
 - had to create a declaration.d.ts file to spoof the colorthief library into working with TypeScript, a shame, but its a quick and ugly fix that seems to work.
 - uninstalled colorthief, as it relies on canvas, and installed color-thief-node, which works better in a node environment.
 - more maths, of a simpler sort just defining acceptable difference in values between what i have defined as my happy colours and the dominantColour returned by color-thief-node
+
+## What I would have liked to have done
+
+- Really enjoyed teh exercise, have been learning new things left and right, which is always satisfying.
+- Would have liked to have created the parallel function that would have convert any given image into the specified object, but I have probably already spent more time on this than 'no more than a few hours' implies....But definitely would have enjoyed seeing it through to the end. Instead I am going to see if i can't do some exercises to reinforce and integrate the things I have learned today.
+- Maths, it's been a while, but I enjoyed wrapping my head around some Maths after a long time away from its most simple forms.
+- More testing, but it gets to a point where I had to prioritise actually getting functionality in place over testing the functions, but I do like to try and practice TDD, definitely results in better cleaner stronger code (at least for me)
+
+**Thanks for this exercise, it has been very stimulating, and I'm looking forward to discussing it with you in the near future!**

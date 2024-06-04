@@ -31,3 +31,7 @@ So my first thoughts are to start thusly :
 - First test written.
 - added `"types": ["node", "jest"]` to tsconfig.json
 - First test passed, now down to business.
+
+## Second steps
+
+- Creating helper functions to breakdown the responsibility of the badgeChecker function.

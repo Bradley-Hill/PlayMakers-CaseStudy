@@ -47,3 +47,21 @@ describe("isPng", () => {
     expect(result).toBe(false);
   });
 });
+
+describe("checkSize", () => {
+  it("should return true if size is 512x512", async () => {
+    const correctSizeImage = fs.readFileSync(
+      path.join(__dirname, "..", "images", "512test.png")
+    );
+    const result = await checkSize(correctSizeImage);
+    expect(result).toBe(true);
+  });
+
+  it("should return false for images not sized 512x512", async () => {
+    const incorrectSizeImage = fs.readFileSync(
+      path.join(__dirname, "..", "images", "test.jpg")
+    );
+    const result = await checkSize(incorrectSizeImage);
+    expect(result).toBe(false);
+  });
+});

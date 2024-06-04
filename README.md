@@ -36,4 +36,4 @@ So my first thoughts are to start thusly :
 
 - Creating helper functions to breakdown the responsibility of the badgeChecker function.
 - added images to images folder to be used in testing, on .png and one .jpg
--
+- tests for checkSize and isPng added in.

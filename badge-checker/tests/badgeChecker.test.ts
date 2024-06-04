@@ -79,4 +79,12 @@ describe("onlyTransparentOutsideCircle", () => {
     const result = await onlyTransparentOutsideCircle(image);
     expect(result).toBe(true);
   });
+
+  it("should return false for images with non-transparent pixels outside teh circle", async () => {
+    const image = fs.readFileSync(
+      path.join(__dirname, "..", "images", "512test.jpg")
+    );
+    const result = await onlyTransparentOutsideCircle(image);
+    expect(result).toBe(false);
+  });
 });

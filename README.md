@@ -37,3 +37,5 @@ So my first thoughts are to start thusly :
 - Creating helper functions to breakdown the responsibility of the badgeChecker function.
 - added images to images folder to be used in testing, on .png and one .jpg
 - tests for checkSize and isPng added in.
+- test for onlyTransparentOutsideCircle tests started
+- detour revising mathematics of circles. (x-h)^2 + (y-k)^2 = r^2 where x and y are any given coordinates and h,k are the centre of the circle. This can be used for checking when pixels are outside of the circle.

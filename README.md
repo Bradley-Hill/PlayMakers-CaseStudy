@@ -35,3 +35,5 @@ So my first thoughts are to start thusly :
 ## Second steps
 
 - Creating helper functions to breakdown the responsibility of the badgeChecker function.
+- added images to images folder to be used in testing, on .png and one .jpg
+-
